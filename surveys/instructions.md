@@ -1,0 +1,1 @@
+To run a survey ensure you have an OpenRouter account with an API key copied to its appropriate location within the code. Also ensure to uncomment an LLM of your choice, and add the desired number of survey responses to generate. If the LLM does not generate the required output it will attempt again, which may lead to increased costs.
