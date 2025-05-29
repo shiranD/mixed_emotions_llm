@@ -64,11 +64,7 @@ class EmotionElicit:
     def __create_model(self, name):
         model = ChatOpenAI(
                 model=name,
-                #openai_api_key = "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",
-                #openai_api_key = "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",
-                #openai_api_key = "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",
-                #openai_api_key = "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",
-                openai_api_key = "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",
+                #openai_api_key = "",
                 openai_api_base="https://openrouter.ai/api/v1"
             )
         return model
