@@ -11,7 +11,6 @@ import time
 models = {
     'mistral': 'mistralai/mistral-7b-instruct',
     'gemma': 'google/gemma-3-27b-it:free',
-    # 'gemma': 'google/gemma-7b-it:free', # Not available 
     'llama31': 'meta-llama/llama-2-70b-chat',
     'gpt4': 'openai/gpt-4-turbo-preview',
     'gpt35': 'openai/gpt-3.5-turbo',
