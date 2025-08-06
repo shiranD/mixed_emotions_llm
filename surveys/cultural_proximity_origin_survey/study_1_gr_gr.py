@@ -26,8 +26,8 @@ class EmotionElicit:
             self.name = "gpt-4-turbo-preview"
         if model_name == ("mistralai/mistral-7b-instruct"):
             self.name = "mistral-7b-instruct"
-        if model_name == ("google/gemma-7b-it:free"):
-            self.name = "gemma-7b-it:free"
+        if model_name == ("google/gemma-3-27b-it:free"):
+            self.name = "gemma-3-27b-it:free"
         if model_name == ("meta-llama/llama-2-70b-chat"):
             self.name = "llama-2-70b-chat"                
         self.culture = "german"
@@ -300,7 +300,7 @@ class EmotionElicit:
 #name=("openai/gpt-3.5-turbo")
 #name=("openai/gpt-4-turbo-preview")
 name=("mistralai/mistral-7b-instruct")
-#name=("google/gemma-7b-it:free")
+#name=("google/gemma-3-27b-it:free")
 #name=("meta-llama/llama-2-70b-chat")
 new = EmotionElicit(name)
 if name == ("openai/gpt-3.5-turbo"):
@@ -309,7 +309,7 @@ if name == ("openai/gpt-4-turbo-preview"):
     fname = "gpt4"
 if name == ("mistralai/mistral-7b-instruct"):
     fname = "mistral"
-if name == ("google/gemma-7b-it:free"):
+if name == ("google/gemma-3-27b-it:free"):
     fname = "gemma"
 if name == ("meta-llama/llama-2-70b-chat"):
     fname = "llama"
