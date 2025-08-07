@@ -27,8 +27,8 @@ class EmotionElicit:
             self.name = "mistral-7b-instruct"
         if model_name == ("google/gemma-3-27b-it:free"):
             self.name = "gemma-3-27b-it:free"
-        if model_name == ("meta-llama/llama-2-70b-chat"):
-            self.name = "llama-2-70b-chat"  
+        if model_name == ("meta-llama/llama-3.3-70b-instruct"):
+            self.name = "llama-3.3-70b-instruct"  
         self.culture = "us"
         self.model = self.__create_model(model_name)
         self.situations = {"You receive a stellar performance review and a promotion,\
@@ -307,7 +307,7 @@ class EmotionElicit:
 name=("openai/gpt-4-turbo-preview")
 #name=("mistralai/mistral-7b-instruct")
 #name=("google/gemma-3-27b-it:free")
-#name=("meta-llama/llama-2-70b-chat")
+#name=("meta-llama/llama-3.3-70b-instruct")
 new = EmotionElicit(name)
 if name == ("openai/gpt-3.5-turbo"):
     fname = "gpt3.5"
@@ -317,7 +317,7 @@ if name == ("mistralai/mistral-7b-instruct"):
     fname = "mistral"
 if name == ("google/gemma-3-27b-it:free"):
     fname = "gemma"
-if name == ("meta-llama/llama-2-70b-chat"):
+if name == ("meta-llama/llama-3.3-70b-instruct"):
     fname = "llama"
 logging.basicConfig(filename=fname+"_en.log", encoding='utf-8', level=logging.DEBUG)
 for i in range(40):
